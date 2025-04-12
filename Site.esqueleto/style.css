@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    background-color: #822898;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    user-select: none;
+}
+
+.container{
+    position: relative;
+}
+
+.moldura{
+    background-color: #EF22F2;
+    padding: 10px;
+    border-radius: 12px;
+    position: relative;
+    display: inline-block;
+}
+
+.segurando{
+    display: block;
+    max-width: 500px;
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+canvas{
+    position: absolute;
+    top: 240px;
+    left: 210px;
+    background-color: transparent;
+    border: solid 2px black;
+    cursor: url("imagens site/lapis.png") 0 30, auto;
+    z-index: 10;
+}
+
+.tools {
+    margin-bottom: 10px;
+}
